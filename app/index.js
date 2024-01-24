@@ -16,6 +16,7 @@ import {
 	Platform,
 } from "react-native";
 import * as Location from "expo-location";
+import { Link } from "expo-router";
 
 const App = () => {
 	const [refreshing, setRefreshing] = React.useState(false);
@@ -61,6 +62,7 @@ const App = () => {
 					<RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
 				}
 			>
+				<Link href="/about">About</Link>
 				<Text>Some text</Text>
 				<View>
 					<Text>{text}</Text>
