@@ -10,7 +10,7 @@ import {
 	SafeAreaView,
 	Button,
 	Alert,
-	TouchableOpacity,
+	Pressable,
 	RefreshControl,
 	Switch,
 	Platform,
@@ -83,12 +83,12 @@ const App = () => {
 					value={isEnabled}
 				/>
 
-				<TouchableOpacity
+				<Pressable
 					style={styles.btn}
 					onPress={() => Alert.alert("Button with adjusted color pressed")}
 				>
 					<Text style={styles.btnText}>Kirim</Text>
-				</TouchableOpacity>
+				</Pressable>
 			</ScrollView>
 		</SafeAreaView>
 	);
